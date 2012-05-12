@@ -48,7 +48,7 @@ app.post('/sessions', routes.ses_cre);
 app.del('/sessions', routes.loadUser, routes.ses_del);
 
 
-app.listen(process.env.C9_PORT || process.env.VCAP_APP_PORT || process.env.PORT , function(){
+app.listen(process.env.PORT , function(){
     // process.env.C9_PORT || process.env.VCAP_APP_PORT || process.env.PORT
     console.log("Server has started.");
 });
