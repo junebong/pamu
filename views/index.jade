@@ -1,0 +1,19 @@
+doctype 5
+html(lang="en")
+  head
+    title= title
+  body
+    h1= h1
+
+    #login-msg
+      p= loginMsg
+    form(method='post', action='/login')
+      label Username:
+        input (name='user[name]', type="text")
+      br
+      label Password:
+        input (name='user[password]', type="text")
+      br
+      button(type='Submit') ログイン
+      
+    a(href=signup_url) 登録   
